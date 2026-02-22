@@ -17,7 +17,7 @@ const data = {
       title: "Product Management Intern",
       company: "Republic",
       location: "New York, NY",
-      period: "Summer 2025",
+      period: "Jun 2025 – Aug 2025",
       bullets: [
         "Productized and automated manual operations for crypto payment methods.",
         "Led discovery into areas of opportunity to minimize manual engineering support bottlenecks.",

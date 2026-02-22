@@ -134,7 +134,7 @@ function Avatar() {
       src="/headshot.jpg"
       alt="Stuart Browning"
       fill
-      className="object-cover object-top mix-blend-multiply"
+      className="object-cover object-top"
       priority
     />
   );

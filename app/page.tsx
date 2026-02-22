@@ -157,7 +157,7 @@ export default function Home() {
       {/* ── Hero: split panel ── */}
       <section
         className="flex flex-col sm:flex-row"
-        style={{ minHeight: "calc(100vh - 65px)" }}
+        style={{ minHeight: "75vh" }}
       >
         {/* Left: contact info */}
         <div className="relative flex flex-col justify-center px-10 py-16 sm:flex-1 sm:px-14">
@@ -230,7 +230,7 @@ export default function Home() {
 
         {/* Right: full-bleed photo panel */}
         <div
-          className="relative min-h-[60vw] overflow-hidden bg-stone-100 sm:min-h-0 sm:w-5/12"
+          className="relative min-h-[60vw] overflow-hidden bg-stone-100 sm:min-h-0 sm:w-[38%]"
         >
           <Avatar />
         </div>

@@ -160,7 +160,7 @@ export default function Home() {
         style={{ minHeight: "calc(100vh - 65px)" }}
       >
         {/* Left: contact info */}
-        <div className="relative flex flex-col justify-center px-10 py-16 sm:w-5/12 sm:px-14">
+        <div className="relative flex flex-col justify-center px-10 py-16 sm:flex-1 sm:px-14">
           <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[4.5rem]">
             {data.name}
           </h1>
@@ -230,7 +230,7 @@ export default function Home() {
 
         {/* Right: full-bleed photo panel */}
         <div
-          className="relative min-h-[55vw] flex-1 overflow-hidden bg-stone-100 sm:min-h-0"
+          className="relative min-h-[60vw] overflow-hidden bg-stone-100 sm:min-h-0 sm:w-5/12"
         >
           <Avatar />
         </div>

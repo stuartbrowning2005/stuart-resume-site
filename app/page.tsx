@@ -161,10 +161,10 @@ export default function Home() {
       >
         {/* Left: contact info */}
         <div className="relative flex flex-col justify-center px-10 py-16 sm:flex-1 sm:px-14">
-          <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[4.5rem]">
+          <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[5.5rem]">
             {data.name}
           </h1>
-          <p className="mt-3 font-serif text-xl italic text-stone-500">
+          <p className="mt-3 font-serif text-2xl italic text-stone-500">
             {data.title}
           </p>
           <p className="mt-1 text-xs text-stone-400">{data.institution}</p>
@@ -230,7 +230,7 @@ export default function Home() {
 
         {/* Right: full-bleed photo panel */}
         <div
-          className="relative min-h-[60vw] overflow-hidden bg-stone-100 sm:min-h-0 sm:w-[38%]"
+          className="relative min-h-[60vw] overflow-hidden bg-stone-100 sm:min-h-0 sm:w-[28%]"
         >
           <Avatar />
         </div>

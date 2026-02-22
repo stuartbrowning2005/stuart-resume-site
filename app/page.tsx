@@ -122,34 +122,21 @@ function Nav() {
 
 // ─── Avatar ───────────────────────────────────────────────────────────────────
 //
-// To display your real headshot:
-//   1. Copy your photo into the public/ folder (e.g. "headshot.jpg")
-//   2. Replace the Avatar function below with:
-//
-//      import Image from "next/image";
-//
-//      function Avatar() {
-//        return (
-//          <div className="relative aspect-[3/4] w-56 overflow-hidden shadow-lg">
-//            <Image
-//              src="/headshot.jpg"
-//              alt="Stuart Browning"
-//              fill
-//              className="object-cover"
-//              priority
-//            />
-//          </div>
-//        );
-//      }
+// Replace the src below with your actual image path (e.g. "/headshot.jpg").
+// The image fills the entire right panel — no borders, no frame.
+// Use object-top to anchor on the face, or object-center for full portrait.
+
+import Image from "next/image";
 
 function Avatar() {
   return (
-    <div
-      className="flex aspect-[3/4] w-48 items-center justify-center font-serif text-5xl font-light text-white/40 sm:w-56"
-      style={{ border: "1px solid rgba(255,255,255,0.25)" }}
-    >
-      SB
-    </div>
+    <Image
+      src="/headshot.jpg"
+      alt="Stuart Browning"
+      fill
+      className="object-cover object-top"
+      priority
+    />
   );
 }
 
@@ -244,10 +231,9 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Right: sage photo panel */}
+        {/* Right: full-bleed photo panel */}
         <div
-          className="flex min-h-[55vw] flex-1 items-center justify-center sm:min-h-0"
-          style={{ backgroundColor: SAGE }}
+          className="relative min-h-[55vw] flex-1 overflow-hidden bg-stone-100 sm:min-h-0"
         >
           <Avatar />
         </div>

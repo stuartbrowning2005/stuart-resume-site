@@ -87,9 +87,6 @@ const data = {
 function Nav() {
   return (
     <header className="flex items-center justify-between border-b border-stone-100 bg-white px-8 py-5">
-      <span className="text-xs uppercase tracking-[0.2em] text-stone-400">
-        Curriculum Vitae
-      </span>
       <nav className="hidden gap-8 sm:flex">
         <a
           href="#about"
@@ -101,7 +98,7 @@ function Nav() {
           href="#experience"
           className="text-xs text-stone-500 transition-colors hover:text-stone-900"
         >
-          résumé
+          resume
         </a>
         <a
           href="#contact"
@@ -163,7 +160,7 @@ export default function Home() {
         style={{ minHeight: "calc(100vh - 65px)" }}
       >
         {/* Left: contact info */}
-        <div className="flex flex-col justify-center px-10 py-16 sm:w-5/12 sm:px-14">
+        <div className="relative flex flex-col justify-center px-10 py-16 sm:w-5/12 sm:px-14">
           <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[4.5rem]">
             {data.name}
           </h1>
@@ -225,7 +222,7 @@ export default function Home() {
 
           <a
             href="#about"
-            className="mt-14 inline-flex w-fit items-center gap-2 text-xs uppercase tracking-[0.2em] text-stone-400 transition-colors hover:text-stone-700"
+            className="absolute bottom-8 left-10 inline-flex items-center gap-2 border border-stone-300 px-4 py-2 text-xs uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-600 hover:text-stone-900 sm:left-14"
           >
             See full CV <span>↓</span>
           </a>
@@ -252,7 +249,7 @@ export default function Home() {
         {/* Experience */}
         <section id="experience" className="mb-24 scroll-mt-8">
           <SectionLabel>Experience</SectionLabel>
-          <div className="divide-y divide-stone-100">
+          <div className="divide-y divide-stone-200">
             {data.experience.map((job) => (
               <div
                 key={`${job.company}-${job.period}`}
@@ -293,7 +290,7 @@ export default function Home() {
         {/* Education */}
         <section id="education" className="mb-24 scroll-mt-8">
           <SectionLabel>Education</SectionLabel>
-          <div className="divide-y divide-stone-100">
+          <div className="divide-y divide-stone-200">
             {data.education.map((edu) => (
               <div key={edu.school} className="py-8 first:pt-0 last:pb-0">
                 <div className="flex items-start justify-between gap-4">

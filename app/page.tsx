@@ -233,8 +233,7 @@ export default function Home() {
 
         {/* Right: full-bleed photo panel */}
         <div
-          className="relative min-h-[55vw] flex-1 overflow-hidden sm:min-h-0"
-          style={{ backgroundColor: SAGE }}
+          className="relative min-h-[55vw] flex-1 overflow-hidden bg-stone-100 sm:min-h-0"
         >
           <Avatar />
         </div>

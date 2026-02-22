@@ -1,9 +1,10 @@
 // ─── Resume Data ─────────────────────────────────────────────────────────────
-// Update this object with your own information.
+const SAGE = "#8fa99a";
+
 const data = {
   name: "Stuart Browning",
-  title: "B.S. Management — Finance & Computer Science",
-  institution: "Tulane University · A.B. Freeman School of Business",
+  title: "Finance & Computer Science",
+  institution: "Tulane University",
   location: "New Orleans, LA",
   email: "Stuartbrowning2005@gmail.com",
   phone: "+1 (305) 401-1031",
@@ -50,22 +51,25 @@ const data = {
   education: [
     {
       degree: "B.S. in Management (Finance & Computer Science)",
-      institution: "Tulane University · A.B. Freeman School of Business",
+      school: "Tulane University",
+      sub: "A.B. Freeman School of Business",
       location: "New Orleans, LA",
       period: "Expected May 2027",
       coursework:
-        "Financial Accounting · Managerial Accounting · Computer Science 1 & 2 · Business Analytics · Financial Management · Intro to Marketing · Microeconomics · Macroeconomics · Business Statistics · Legal Environment of Business",
+        "Financial Accounting · Managerial Accounting · CS 1 & 2 · Business Analytics · Financial Management · Intro to Marketing · Microeconomics · Macroeconomics · Business Statistics · Legal Environment of Business",
     },
     {
       degree: "Study Abroad",
-      institution: "John Cabot University",
+      school: "John Cabot University",
+      sub: "",
       location: "",
       period: "",
       coursework: "Programming Concepts & Applications",
     },
     {
       degree: "High School Diploma",
-      institution: "Miami Country Day School",
+      school: "Miami Country Day School",
+      sub: "",
       location: "Miami, FL",
       period: "",
       coursework: "",
@@ -78,65 +82,40 @@ const data = {
   ],
 };
 
-// ─── Icons ────────────────────────────────────────────────────────────────────
-
-function LinkedInIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
-  );
-}
-
-function GitHubIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
-      <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-    </svg>
-  );
-}
-
 // ─── Nav ─────────────────────────────────────────────────────────────────────
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-10 border-b border-stone-200 bg-[#faf8f5]/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-        <span className="text-sm font-semibold tracking-tight text-stone-900">
-          {data.name}
-        </span>
-        <nav className="hidden gap-6 sm:flex">
-          {["About", "Experience", "Education", "Skills"].map((s) => (
-            <a
-              key={s}
-              href={`#${s.toLowerCase()}`}
-              className="text-sm text-stone-500 transition-colors hover:text-stone-900"
-            >
-              {s}
-            </a>
-          ))}
-        </nav>
-        <div className="flex items-center gap-2">
-          <a
-            href={data.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-md border border-stone-200 bg-white px-3 py-1.5 text-xs font-medium text-stone-600 shadow-sm transition-all hover:border-stone-300 hover:shadow"
-          >
-            <LinkedInIcon />
-            LinkedIn
-          </a>
-          <a
-            href={data.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-md border border-stone-200 bg-white px-3 py-1.5 text-xs font-medium text-stone-600 shadow-sm transition-all hover:border-stone-300 hover:shadow"
-          >
-            <GitHubIcon />
-            GitHub
-          </a>
-        </div>
-      </div>
+    <header className="flex items-center justify-between border-b border-stone-100 bg-white px-8 py-5">
+      <span className="text-xs uppercase tracking-[0.2em] text-stone-400">
+        Curriculum Vitae
+      </span>
+      <nav className="hidden gap-8 sm:flex">
+        <a
+          href="#about"
+          className="text-xs text-stone-500 transition-colors hover:text-stone-900"
+        >
+          about
+        </a>
+        <a
+          href="#experience"
+          className="text-xs text-stone-500 transition-colors hover:text-stone-900"
+        >
+          résumé
+        </a>
+        <a
+          href="#contact"
+          className="text-xs text-stone-500 transition-colors hover:text-stone-900"
+        >
+          contact
+        </a>
+      </nav>
+      <a
+        href="#contact"
+        className="rounded-sm bg-stone-900 px-5 py-2 text-xs font-medium text-white transition-colors hover:bg-stone-700"
+      >
+        Get in touch
+      </a>
     </header>
   );
 }
@@ -144,17 +123,17 @@ function Nav() {
 // ─── Avatar ───────────────────────────────────────────────────────────────────
 //
 // To display your real headshot:
-//   1. Copy your photo into the public/ folder (e.g. "Stuart-headshot 2.jpg")
+//   1. Copy your photo into the public/ folder (e.g. "headshot.jpg")
 //   2. Replace the Avatar function below with:
 //
 //      import Image from "next/image";
 //
 //      function Avatar() {
 //        return (
-//          <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-sm">
+//          <div className="relative aspect-[3/4] w-56 overflow-hidden shadow-lg">
 //            <Image
-//              src="/Stuart-headshot 2.jpg"
-//              alt={data.name}
+//              src="/headshot.jpg"
+//              alt="Stuart Browning"
 //              fill
 //              className="object-cover"
 //              priority
@@ -165,22 +144,22 @@ function Nav() {
 
 function Avatar() {
   return (
-    <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-full bg-stone-200 text-2xl font-bold text-stone-500 ring-4 ring-white shadow-sm">
+    <div
+      className="flex aspect-[3/4] w-48 items-center justify-center font-serif text-5xl font-light text-white/40 sm:w-56"
+      style={{ border: "1px solid rgba(255,255,255,0.25)" }}
+    >
       SB
     </div>
   );
 }
 
-// ─── Section Header ───────────────────────────────────────────────────────────
+// ─── Section label ────────────────────────────────────────────────────────────
 
-function SectionHeader({ label }: { label: string }) {
+function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-8 flex items-center gap-4">
-      <h2 className="whitespace-nowrap text-xs font-semibold uppercase tracking-widest text-stone-400">
-        {label}
-      </h2>
-      <div className="h-px flex-1 bg-stone-200" />
-    </div>
+    <p className="mb-10 text-xs uppercase tracking-[0.2em] text-stone-400">
+      {children}
+    </p>
   );
 }
 
@@ -188,67 +167,134 @@ function SectionHeader({ label }: { label: string }) {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#faf8f5] text-stone-900">
+    <div className="min-h-screen bg-white text-stone-900">
       <Nav />
 
-      <main className="mx-auto max-w-4xl px-6 py-16">
-        {/* Hero */}
-        <section className="mb-16 flex flex-col items-center gap-8 text-center sm:flex-row sm:items-start sm:text-left">
-          <Avatar />
-          <div>
-            <h1 className="text-4xl font-bold tracking-tight text-stone-900">
-              {data.name}
-            </h1>
-            <p className="mt-1 text-lg text-stone-500">{data.title}</p>
-            <p className="mt-0.5 text-sm text-stone-400">{data.institution}</p>
-            <div className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-stone-600 sm:justify-start">
-              <a
-                href={`mailto:${data.email}`}
-                className="transition-colors hover:text-stone-900"
-              >
-                {data.email}
-              </a>
+      {/* ── Hero: split panel ── */}
+      <section
+        className="flex flex-col sm:flex-row"
+        style={{ minHeight: "calc(100vh - 65px)" }}
+      >
+        {/* Left: contact info */}
+        <div className="flex flex-col justify-center px-10 py-16 sm:w-5/12 sm:px-14">
+          <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[4.5rem]">
+            {data.name}
+          </h1>
+          <p className="mt-3 font-serif text-xl italic text-stone-500">
+            {data.title}
+          </p>
+          <p className="mt-1 text-xs text-stone-400">{data.institution}</p>
+
+          <div className="mt-10 space-y-3">
+            <div className="flex items-baseline gap-4">
+              <span className="w-16 shrink-0 text-xs text-stone-400">
+                Phone
+              </span>
               <a
                 href={`tel:${data.phone}`}
-                className="transition-colors hover:text-stone-900"
+                className="text-sm text-stone-700 transition-colors hover:text-stone-900"
               >
                 {data.phone}
               </a>
-              <span>{data.location}</span>
+            </div>
+            <div className="flex items-baseline gap-4">
+              <span className="w-16 shrink-0 text-xs text-stone-400">
+                Email
+              </span>
+              <a
+                href={`mailto:${data.email}`}
+                className="break-all text-sm text-stone-700 transition-colors hover:text-stone-900"
+              >
+                {data.email}
+              </a>
+            </div>
+            <div className="flex items-baseline gap-4">
+              <span className="w-16 shrink-0 text-xs text-stone-400">
+                Address
+              </span>
+              <span className="text-sm text-stone-700">{data.location}</span>
             </div>
           </div>
-        </section>
 
+          <div className="mt-4 flex gap-3 pl-20">
+            <a
+              href={data.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
+            >
+              LinkedIn
+            </a>
+            <span className="text-stone-200">·</span>
+            <a
+              href={data.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
+            >
+              GitHub
+            </a>
+          </div>
+
+          <a
+            href="#about"
+            className="mt-14 inline-flex w-fit items-center gap-2 text-xs uppercase tracking-[0.2em] text-stone-400 transition-colors hover:text-stone-700"
+          >
+            See full CV <span>↓</span>
+          </a>
+        </div>
+
+        {/* Right: sage photo panel */}
+        <div
+          className="flex min-h-[55vw] flex-1 items-center justify-center sm:min-h-0"
+          style={{ backgroundColor: SAGE }}
+        >
+          <Avatar />
+        </div>
+      </section>
+
+      {/* ── Content ── */}
+      <div className="mx-auto max-w-3xl px-8 py-24">
         {/* About */}
-        <section id="about" className="mb-14 scroll-mt-20">
-          <SectionHeader label="About" />
-          <p className="text-base leading-relaxed text-stone-600">{data.about}</p>
+        <section id="about" className="mb-24 scroll-mt-8">
+          <SectionLabel>About</SectionLabel>
+          <p className="font-serif text-2xl font-light leading-relaxed text-stone-700 sm:text-3xl">
+            {data.about}
+          </p>
         </section>
 
         {/* Experience */}
-        <section id="experience" className="mb-14 scroll-mt-20">
-          <SectionHeader label="Experience" />
-          <div className="space-y-5">
+        <section id="experience" className="mb-24 scroll-mt-8">
+          <SectionLabel>Experience</SectionLabel>
+          <div className="divide-y divide-stone-100">
             {data.experience.map((job) => (
               <div
                 key={`${job.company}-${job.period}`}
-                className="rounded-xl border border-stone-200 bg-white p-6 shadow-sm"
+                className="py-10 first:pt-0 last:pb-0"
               >
-                <div className="mb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                <div className="mb-5 flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="font-semibold text-stone-900">{job.title}</h3>
-                    <p className="mt-0.5 text-sm text-stone-500">
-                      {job.company} &middot; {job.location}
+                    <h3 className="font-serif text-2xl font-semibold text-stone-900">
+                      {job.company}
+                    </h3>
+                    <p className="font-serif text-lg italic text-stone-500">
+                      {job.title}
+                    </p>
+                    <p className="mt-1 text-xs uppercase tracking-widest text-stone-400">
+                      {job.location}
                     </p>
                   </div>
-                  <span className="mt-1 shrink-0 text-sm text-stone-400 sm:mt-0">
+                  <span className="mt-1 shrink-0 text-xs uppercase tracking-widest text-stone-400">
                     {job.period}
                   </span>
                 </div>
-                <ul className="space-y-2.5">
+                <ul className="space-y-3">
                   {job.bullets.map((b, i) => (
-                    <li key={i} className="flex gap-3 text-sm leading-relaxed text-stone-600">
-                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-stone-300" />
+                    <li
+                      key={i}
+                      className="flex gap-4 text-sm leading-relaxed text-stone-600"
+                    >
+                      <span className="mt-[9px] h-px w-4 shrink-0 bg-stone-300" />
                       {b}
                     </li>
                   ))}
@@ -259,24 +305,30 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section id="education" className="mb-14 scroll-mt-20">
-          <SectionHeader label="Education" />
-          <div className="space-y-4">
+        <section id="education" className="mb-24 scroll-mt-8">
+          <SectionLabel>Education</SectionLabel>
+          <div className="divide-y divide-stone-100">
             {data.education.map((edu) => (
-              <div
-                key={edu.institution}
-                className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm"
-              >
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+              <div key={edu.school} className="py-8 first:pt-0 last:pb-0">
+                <div className="flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="font-semibold text-stone-900">{edu.degree}</h3>
-                    <p className="mt-0.5 text-sm text-stone-500">
-                      {edu.institution}
-                      {edu.location ? ` · ${edu.location}` : ""}
+                    <h3 className="font-serif text-2xl font-semibold text-stone-900">
+                      {edu.school}
+                    </h3>
+                    {edu.sub && (
+                      <p className="text-xs text-stone-400">{edu.sub}</p>
+                    )}
+                    <p className="font-serif text-lg italic text-stone-500">
+                      {edu.degree}
                     </p>
+                    {edu.location && (
+                      <p className="mt-1 text-xs uppercase tracking-widest text-stone-400">
+                        {edu.location}
+                      </p>
+                    )}
                   </div>
                   {edu.period && (
-                    <span className="mt-1 shrink-0 text-sm text-stone-400 sm:mt-0">
+                    <span className="mt-1 shrink-0 text-xs uppercase tracking-widest text-stone-400">
                       {edu.period}
                     </span>
                   )}
@@ -292,22 +344,19 @@ export default function Home() {
         </section>
 
         {/* Skills */}
-        <section id="skills" className="scroll-mt-20">
-          <SectionHeader label="Skills" />
-          <div className="space-y-4">
+        <section id="skills" className="scroll-mt-8">
+          <SectionLabel>Skills & Tools</SectionLabel>
+          <div className="space-y-6">
             {data.skills.map(({ category, items }) => (
-              <div
-                key={category}
-                className="flex flex-col gap-2 sm:flex-row sm:items-center"
-              >
-                <span className="w-20 shrink-0 text-sm text-stone-400">
+              <div key={category} className="flex gap-8">
+                <span className="w-20 shrink-0 text-xs uppercase tracking-widest text-stone-400">
                   {category}
                 </span>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-x-8 gap-y-2">
                   {items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-stone-200 bg-white px-3 py-1 text-sm text-stone-600 shadow-sm"
+                      className="font-serif text-xl text-stone-700"
                     >
                       {item}
                     </span>
@@ -317,11 +366,40 @@ export default function Home() {
             ))}
           </div>
         </section>
-      </main>
+      </div>
 
-      <footer className="mt-20 border-t border-stone-200 py-8 text-center text-sm text-stone-400">
-        {data.name} &mdash; {new Date().getFullYear()}
-      </footer>
+      {/* ── Contact footer ── */}
+      <section id="contact" className="border-t border-stone-100 py-24 text-center">
+        <p className="font-serif text-4xl font-light text-stone-700">
+          Get in touch
+        </p>
+        <a
+          href={`mailto:${data.email}`}
+          className="mt-4 block font-serif text-xl italic text-stone-500 transition-colors hover:text-stone-900"
+        >
+          {data.email}
+        </a>
+        <p className="mt-2 text-sm text-stone-400">{data.phone}</p>
+        <div className="mt-6 flex justify-center gap-4 text-xs text-stone-400">
+          <a
+            href={data.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 transition-colors hover:text-stone-700"
+          >
+            LinkedIn
+          </a>
+          <span>·</span>
+          <a
+            href={data.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 transition-colors hover:text-stone-700"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
     </div>
   );
 }

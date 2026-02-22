@@ -78,7 +78,7 @@ const data = {
   skills: [
     { category: "Software", items: ["Python", "Java", "C"] },
     { category: "Web", items: ["React", "Next.js", "Firebase", "Tailwind CSS"] },
-    { category: "Tools", items: ["Excel", "PowerPoint", "Figma", "Bolt"] },
+    { category: "Tools", items: ["Excel", "PowerPoint", "Figma", "Bolt", "Claude Code"] },
   ],
 };
 

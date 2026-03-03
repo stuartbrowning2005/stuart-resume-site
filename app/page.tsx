@@ -130,7 +130,7 @@ function Avatar() {
       src="/headshot.jpg"
       alt="Stuart Browning"
       fill
-      className="object-cover object-top"
+      className="object-cover object-[center_15%]"
       priority
     />
   );
@@ -160,13 +160,13 @@ export default function Home() {
       >
         {/* Left: contact info */}
         <div className="relative flex flex-col justify-center px-10 py-16 sm:flex-1 sm:px-14">
-          <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[4.5rem]">
+          <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[5.5rem]">
             {data.name}
           </h1>
-          <p className="mt-3 font-serif text-2xl italic text-stone-500">
+          <p className="mt-3 font-serif text-3xl italic text-stone-500">
             {data.title}
           </p>
-          <p className="mt-1 text-xs text-stone-400">{data.institution}</p>
+          <p className="mt-1 text-sm text-stone-400">{data.institution}</p>
 
           <div className="mt-10 space-y-3">
             <div className="flex items-baseline gap-4">

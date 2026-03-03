@@ -168,43 +168,43 @@ export default function Home() {
           </p>
           <p className="mt-1 text-sm text-stone-400">{data.institution}</p>
 
-          <div className="mt-10 space-y-3">
+          <div className="mt-14 space-y-5">
             <div className="flex items-baseline gap-4">
-              <span className="w-16 shrink-0 text-xs text-stone-400">
+              <span className="w-20 shrink-0 text-sm text-stone-400">
                 Phone
               </span>
               <a
                 href={`tel:${data.phone}`}
-                className="text-sm text-stone-700 transition-colors hover:text-stone-900"
+                className="text-base text-stone-700 transition-colors hover:text-stone-900"
               >
                 {data.phone}
               </a>
             </div>
             <div className="flex items-baseline gap-4">
-              <span className="w-16 shrink-0 text-xs text-stone-400">
+              <span className="w-20 shrink-0 text-sm text-stone-400">
                 Email
               </span>
               <a
                 href={`mailto:${data.email}`}
-                className="break-all text-sm text-stone-700 transition-colors hover:text-stone-900"
+                className="break-all text-base text-stone-700 transition-colors hover:text-stone-900"
               >
                 {data.email}
               </a>
             </div>
             <div className="flex items-baseline gap-4">
-              <span className="w-16 shrink-0 text-xs text-stone-400">
+              <span className="w-20 shrink-0 text-sm text-stone-400">
                 Address
               </span>
-              <span className="text-sm text-stone-700">{data.location}</span>
+              <span className="text-base text-stone-700">{data.location}</span>
             </div>
           </div>
 
-          <div className="mt-4 flex gap-3 pl-20">
+          <div className="mt-8 flex gap-4 pl-24">
             <a
               href={data.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
+              className="text-sm text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
             >
               LinkedIn
             </a>
@@ -213,7 +213,7 @@ export default function Home() {
               href={data.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
+              className="text-sm text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
             >
               GitHub
             </a>

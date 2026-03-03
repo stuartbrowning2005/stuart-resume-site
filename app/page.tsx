@@ -10,7 +10,7 @@ const data = {
   linkedin: "https://www.linkedin.com/in/stuart-e-browning",
   github: "https://github.com/stuartbrowning2005",
   about:
-    "Finance and Computer Science student at Tulane University with hands-on experience in product management, data analysis, and software development. I thrive at the intersection of technical and business thinking — from writing product specs and shipping Figma prototypes to building automation tools in Python.",
+    " I'm a junior at Tulane pursuing a dual degree in Finance and Computer Science. Over the past three summers I've interned at tech startups in London and New York, and I'm currently looking for an interesting and challenging internship for summer 2026.",
   experience: [
     {
       title: "Product Management Intern",
@@ -126,13 +126,15 @@ import Image from "next/image";
 
 function Avatar() {
   return (
-    <Image
-      src="/headshot.jpg"
-      alt="Stuart Browning"
-      fill
-      className="object-cover object-[center_15%]"
-      priority
-    />
+    <div className="relative h-full w-full">
+      <Image
+        src="/headshot.jpg"
+        alt="Stuart Browning"
+        fill
+        className="object-cover object-[center_15%] saturate-90 contrast-95"
+        priority
+      />
+    </div>
   );
 }
 
@@ -150,88 +152,63 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-stone-900">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-white to-white text-stone-900">
       <Nav />
 
-      {/* ── Hero: split panel ── */}
-      <section
-        className="flex flex-col sm:flex-row"
-        style={{ minHeight: "60vh" }}
-      >
-        {/* Left: contact info */}
-        <div className="relative flex flex-col justify-center px-10 py-16 sm:flex-1 sm:px-14">
-          <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[5.5rem]">
-            {data.name}
-          </h1>
-          <p className="mt-3 font-serif text-3xl italic text-stone-500">
-            {data.title}
-          </p>
-          <p className="mt-1 text-sm text-stone-400">{data.institution}</p>
+      {/* ── Hero ── */}
+      <section className="px-10 pt-20 pb-10 sm:px-14 sm:pt-24 sm:pb-12">
+        <div className="grid grid-cols-1 items-start gap-x-14 lg:grid-cols-12">
 
-          <div className="mt-14 space-y-5">
-            <div className="flex items-baseline gap-4">
-              <span className="w-20 shrink-0 text-sm text-stone-400">
-                Phone
-              </span>
-              <a
-                href={`tel:${data.phone}`}
-                className="text-base text-stone-700 transition-colors hover:text-stone-900"
-              >
-                {data.phone}
-              </a>
-            </div>
-            <div className="flex items-baseline gap-4">
-              <span className="w-20 shrink-0 text-sm text-stone-400">
-                Email
-              </span>
-              <a
-                href={`mailto:${data.email}`}
-                className="break-all text-base text-stone-700 transition-colors hover:text-stone-900"
-              >
-                {data.email}
-              </a>
-            </div>
-            <div className="flex items-baseline gap-4">
-              <span className="w-20 shrink-0 text-sm text-stone-400">
-                Address
-              </span>
-              <span className="text-base text-stone-700">{data.location}</span>
-            </div>
-          </div>
+          {/* Left: text — col-span-7 */}
+          <div className="lg:col-span-7">
+            <h1 className="font-serif text-[3rem] font-light leading-none tracking-tight text-stone-900 sm:text-[5.5rem]">
+              {data.name}
+            </h1>
 
-          <div className="mt-8 flex gap-4 pl-24">
+            <p className="mt-3 font-serif text-2xl italic text-stone-500">Student</p>
+
+            <hr className="mt-8 w-full border-t border-black/10" />
+
+            <div className="mt-6 space-y-3">
+              <div className="flex items-baseline gap-4">
+                <span className="w-20 shrink-0 text-sm text-stone-400">Phone</span>
+                <a href={`tel:${data.phone}`} className="text-sm text-stone-700 transition-colors hover:text-stone-900">{data.phone}</a>
+              </div>
+              <div className="flex items-baseline gap-4">
+                <span className="w-20 shrink-0 text-sm text-stone-400">Email</span>
+                <a href={`mailto:${data.email}`} className="break-all text-sm text-stone-700 transition-colors hover:text-stone-900">{data.email}</a>
+              </div>
+              <div className="flex items-baseline gap-4">
+                <span className="w-20 shrink-0 text-sm text-stone-400">Location</span>
+                <span className="text-sm text-stone-700">{data.location}</span>
+              </div>
+              <div className="flex items-baseline gap-4">
+                <span className="w-20 shrink-0 text-sm text-stone-400"> </span>
+                <div className="flex gap-4">
+                  <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-stone-400 underline underline-offset-4 transition-colors hover:text-stone-900">LinkedIn</a>
+                  <span className="text-stone-200">·</span>
+                  <a href={data.github} target="_blank" rel="noopener noreferrer" className="text-sm text-stone-400 underline underline-offset-4 transition-colors hover:text-stone-900">GitHub</a>
+                </div>
+              </div>
+            </div>
+
             <a
-              href={data.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
+              href="#about"
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-black/15 px-4 py-2 text-xs tracking-widest text-stone-600 transition-colors hover:bg-black/[0.03] hover:text-stone-900"
             >
-              LinkedIn
-            </a>
-            <span className="text-stone-200">·</span>
-            <a
-              href={data.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
-            >
-              GitHub
+              See full CV ↓
             </a>
           </div>
 
-          <a
-            href="#about"
-            className="absolute bottom-8 left-10 inline-flex items-center gap-2 border border-stone-300 px-4 py-2 text-xs uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-600 hover:text-stone-900 sm:left-14"
-          >
-            See full CV <span>↓</span>
-          </a>
-        </div>
+          {/* Right: badge portrait — col-span-5 */}
+          <div className="mt-10 hidden lg:col-span-5 lg:mt-0 lg:block">
+            <div className="ml-auto mt-10 max-w-[300px] rounded-2xl border border-black/10 bg-black/[0.02] p-3">
+              <div className="relative overflow-hidden rounded-xl" style={{ aspectRatio: "3/4" }}>
+                <Avatar />
+              </div>
+            </div>
+          </div>
 
-        {/* Right: full-bleed photo panel */}
-        <div
-          className="relative min-h-[60vw] overflow-hidden bg-stone-100 sm:min-h-0 sm:w-[36%]"
-        >
-          <Avatar />
         </div>
       </section>
 
@@ -240,6 +217,7 @@ export default function Home() {
         {/* About */}
         <section id="about" className="mb-24 scroll-mt-8">
           <SectionLabel>About</SectionLabel>
+          <p className="mb-6 font-serif text-2xl font-light text-stone-700 sm:text-3xl">Hi, I&apos;m Stuart</p>
           <p className="font-serif text-2xl font-light leading-relaxed text-stone-700 sm:text-3xl">
             {data.about}
           </p>

@@ -1,5 +1,6 @@
 // app/page.tsx — Stuart Browning, personal site (overhaul, Oct 2026)
 import Image from "next/image";
+import ScrollTop from "./ScrollTop";
 
 const data = {
   name: "Stuart Browning",
@@ -14,7 +15,7 @@ const data = {
 
   about: [
     "I'm a senior at Tulane pursuing a dual degree in Finance and Computer Science, graduating December 2027.",
-    "Across internships at zerohash, Republic and Doorway in New York and London, I've worked on crypto payments infrastructure, product and operations. Today I'm a co-founder of Atlas SVC, where we're shipping the beta of Atlas Workbench on November 9.",
+    "Across internships at zerohash, Republic, and Doorway in New York and London, I've worked on crypto payments infrastructure, product, operations, and enterprise sales. Today I'm a co-founder of Atlas SVC, where we're shipping the beta of Atlas Workbench on November 9.",
   ],
 
   experience: [
@@ -26,7 +27,7 @@ const data = {
       period: "Sep 2026 – Present",
       bullets: [
         "Co-founded Atlas SVC to build Atlas Workbench, a spatial canvas where an AI agent reads and acts across a team's connected tools. Beta launches Nov 9, 2026.",
-        "Our beta supports GitHub, Figma, Jira, Confluence and Slack through MCP.",
+        "Our beta supports GitHub, Figma, Jira, Confluence, and Slack.",
       ],
     },
     {
@@ -36,10 +37,10 @@ const data = {
       period: "May 2026 – Aug 2026",
       bullets: [
         "Scoped an AI support layer for the Connect dashboard chatbot to expand automated resolution beyond its initial use cases.",
-        "Led EU-parity scoping for the Payouts and Payins products, defining deployment scope, entity branding, disclosures and regulatory readiness across product, legal, compliance and engineering.",
+        "Led EU-parity scoping for the Payouts and Payins products, defining deployment scope, entity branding, disclosures, and regulatory readiness across product, legal, compliance, and engineering.",
         "Designed Travel Rule sender-information flows for the EU Payins product.",
         "Defined a donations version of the Payins SDK for crypto-native events, including payment edge cases and KYC configuration.",
-        "Gathered requirements from engineering, compliance, legal, support, marketing and finance to set scope and out-of-scope boundaries.",
+        "Gathered requirements from engineering, compliance, legal, support, marketing, and finance to set scope and out-of-scope boundaries.",
         "Produced Figma and Lucid flow diagrams to align stakeholders.",
         "Embedded with the sales team for a week, joining live prospect calls to bring customer requirements and objections back into product scope.",
       ],
@@ -52,7 +53,7 @@ const data = {
       bullets: [
         "Productized and automated manual operations for crypto payment methods.",
         "Wrote a PRD to compliantly productize engineering-initiated disbursements from a third-party crypto payment processor to escrow.",
-        "Built a working prototype in Figma, Bolt and Cursor to match the PRD.",
+        "Built a working prototype in Figma, Bolt, and Cursor to match the PRD.",
         "Interviewed business and engineering stakeholders to map current processes and remove engineering-support bottlenecks.",
       ],
     },
@@ -117,6 +118,7 @@ function Section({
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0e0e0c] text-[#ece8df] antialiased selection:bg-[#d9b56b] selection:text-black">
+      <ScrollTop />
       {/* Nav */}
       <nav className="sticky top-0 z-10 border-b border-white/[0.07] bg-[#0e0e0c]/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
@@ -148,7 +150,6 @@ export default function Home() {
             <p className="mt-6 font-serif text-2xl italic text-[#d9b56b] md:text-3xl">
               {data.tagline}
             </p>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#b3aea3]">{data.intro}</p>
 
             <dl className="mt-10 grid max-w-xl grid-cols-[90px_1fr] gap-y-2 text-sm">
               <dt className="text-[#7d786d]">Email</dt>

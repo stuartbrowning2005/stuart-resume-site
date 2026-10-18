@@ -4,9 +4,9 @@ import ScrollTop from "./ScrollTop";
 
 const data = {
   name: "Stuart Browning",
-  tagline: "Entrepreneur, Co-founder of Atlas SVC",
+  tagline: "Entrepreneur, Co-founder of Atlas Workbench",
   intro:
-    "Senior at Tulane studying Finance and Computer Science. Building Atlas Workbench, a spatial workspace where an AI agent works across the tools your team already uses.",
+    "Senior at Tulane studying Finance and Computer Science. Co-founder of Atlas Workbench, a spatial workspace where an AI agent works across the tools your team already uses.",
   email: "Stuartbrowning2005@gmail.com",
   phone: "+1 (305) 401-1031",
   location: "New Orleans, LA · New York, NY",
@@ -15,18 +15,18 @@ const data = {
 
   about: [
     "I'm a senior at Tulane pursuing a dual degree in Finance and Computer Science, graduating December 2027.",
-    "Across internships at zerohash, Republic, and Doorway in New York and London, I've worked on crypto payments infrastructure, product, operations, and enterprise sales. Today I'm a co-founder of Atlas SVC, where we're shipping the beta of Atlas Workbench on November 9.",
+    "Across internships at zerohash, Republic, and Doorway in New York and London, I've worked on crypto payments infrastructure, product, operations, and enterprise sales. Today I'm a co-founder of Atlas Workbench, and we're shipping our beta on November 9th, 2026.",
   ],
 
   experience: [
     {
-      company: "Atlas SVC",
+      company: "Atlas Workbench",
       title: "Co-founder",
       location: "New Orleans, LA",
       url: "https://atlasworkbench.ai",
       period: "Sep 2026 – Present",
       bullets: [
-        "Co-founded Atlas SVC to build Atlas Workbench, a spatial canvas where an AI agent reads and acts across a team's connected tools. Beta launches Nov 9, 2026.",
+        "Co-founded Atlas Workbench, a spatial canvas where an AI agent reads and acts across a team's connected tools. Beta launches November 9th, 2026.",
         "Our beta supports GitHub, Figma, Jira, Confluence, and Slack.",
       ],
     },

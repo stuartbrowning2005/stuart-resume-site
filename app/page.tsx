@@ -91,7 +91,7 @@ const data = {
 
   skills: {
     Languages: ["TypeScript", "JavaScript", "Python", "Java", "C"],
-    Building: ["React", "Next.js", "Tauri", "Node.js", "Tailwind CSS", "Firebase", "MCP"],
+    Building: ["React", "Next.js", "Tauri", "Node.js", "Tailwind CSS", "Firebase"],
     Tools: ["Claude Code", "Cursor", "Figma", "Excel", "PowerPoint"],
   },
 };

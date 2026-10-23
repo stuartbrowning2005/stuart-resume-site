@@ -118,7 +118,7 @@ function Section({
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0e0e0c] text-[#ece8df] antialiased selection:bg-[#d9b56b] selection:text-black">
+    <main className="dot-grid min-h-screen text-[#ece8df] antialiased selection:bg-[#d9b56b] selection:text-black">
       <ScrollTop />
       {/* Nav */}
       <nav className="sticky top-0 z-10 border-b border-white/[0.07] bg-[#0e0e0c]/85 backdrop-blur">

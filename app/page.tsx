@@ -108,8 +108,8 @@ function Section({
 }) {
   return (
     <section id={id} className="scroll-mt-20 border-t border-white/[0.07]">
-      <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-16">
-        <h2 className="mb-8 font-serif text-4xl italic text-[#ece8df] md:text-5xl">{title}</h2>
+      <div className="mx-auto max-w-6xl px-6 py-10 md:px-10 md:py-12">
+        <h2 className="mb-6 font-serif text-4xl italic text-[#ece8df] md:text-5xl">{title}</h2>
         {children}
       </div>
     </section>
@@ -137,7 +137,7 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section id="top" className="mx-auto max-w-6xl px-6 pb-14 pt-16 md:px-10 md:pb-16 md:pt-24">
+      <section id="top" className="mx-auto max-w-6xl px-6 pb-10 pt-16 md:px-10 md:pb-12 md:pt-24">
         <div className="grid items-end gap-10 md:grid-cols-[1fr_280px] md:gap-16">
           <div>
             <h1 className="font-serif text-6xl leading-[0.95] tracking-tight md:text-8xl">

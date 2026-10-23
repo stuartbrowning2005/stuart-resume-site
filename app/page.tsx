@@ -9,7 +9,7 @@ const data = {
     "Senior at Tulane studying Finance and Computer Science. Co-founder of Atlas Workbench, a spatial workspace where an AI agent works across the tools your team already uses.",
   email: "Stuartbrowning2005@gmail.com",
   phone: "+1 (305) 401-1031",
-  location: "New Orleans, Louisiana · New York, New York",
+  location: "New Orleans · New York City",
   linkedin: "https://www.linkedin.com/in/stuart-e-browning",
   github: "https://github.com/stuartbrowning2005",
 
@@ -22,7 +22,7 @@ const data = {
     {
       company: "Atlas Workbench",
       title: "Co-founder",
-      location: "New Orleans, Louisiana",
+      location: "New Orleans",
       url: "https://atlasworkbench.ai",
       period: "Sep 2026 – Present",
       bullets: [
@@ -33,7 +33,7 @@ const data = {
     {
       company: "zerohash",
       title: "Product Management Intern",
-      location: "New York, New York",
+      location: "New York City",
       period: "May 2026 – Aug 2026",
       bullets: [
         "Scoped an AI support layer for the Connect dashboard chatbot to expand automated resolution beyond its initial use cases.",
@@ -48,7 +48,7 @@ const data = {
     {
       company: "Republic",
       title: "Product Management Intern",
-      location: "New York, New York",
+      location: "New York City",
       period: "Jun 2025 – Aug 2025",
       bullets: [
         "Productized and automated manual operations for crypto payment methods.",
@@ -60,7 +60,7 @@ const data = {
     {
       company: "Republic",
       title: "Intern to the Chief of Staff",
-      location: "New York, New York",
+      location: "New York City",
       period: "Jun 2024 – Aug 2024",
       bullets: [
         "Supported the Chief of Staff in the Office of the CEO on high-priority strategic initiatives.",
@@ -70,7 +70,7 @@ const data = {
     {
       company: "Doorway",
       title: "Inbound Data Analyst Intern",
-      location: "London, England",
+      location: "London",
       period: "Jun 2023 – Aug 2023",
       bullets: [
         "Qualified inbound leads with the Sales and Marketing teams.",
@@ -84,10 +84,10 @@ const data = {
       school: "Tulane University",
       detail: "A.B. Freeman School of Business · B.S. Management (Finance & Computer Science)",
       period: "Expected Dec 2027",
-      location: "New Orleans, Louisiana",
+      location: "New Orleans",
     },
-    { school: "John Cabot University", detail: "Study abroad", period: "", location: "Rome, Italy" },
-    { school: "Miami Country Day School", detail: "High school diploma", period: "", location: "Miami, Florida" },
+    { school: "John Cabot University", detail: "Study abroad", period: "", location: "Rome" },
+    { school: "Miami Country Day School", detail: "High school diploma", period: "", location: "Miami" },
   ],
 
   skills: {

@@ -15,7 +15,7 @@ const data = {
 
   about: [
     "I'm a senior at Tulane pursuing a dual degree in Finance and Computer Science, graduating December 2027.",
-    "Across internships at zerohash, Republic, and Doorway in New York and London, I've worked on crypto payments infrastructure, product, operations, and enterprise sales. Today I'm a co-founder of Atlas Workbench, and we're shipping our beta on November 9th, 2026.",
+    "Across internships at zerohash, Republic, and Doorway in New York and London, I've worked on crypto payments infrastructure, product, software engineering, operations, and enterprise sales. Today I'm a co-founder of Atlas Workbench, and we're shipping our beta on November 9th, 2026.",
   ],
 
   experience: [

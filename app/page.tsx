@@ -128,7 +128,7 @@ export default function Home() {
             <a href="#experience" className="hover:text-white">Experience</a>
             <a
               href="#contact"
-              className="bg-[#d9b56b] px-6 py-3 text-base font-medium text-black transition hover:bg-[#e6c785]"
+              className="bg-[#f2c84b] px-6 py-3 text-base font-medium text-black transition hover:bg-[#f7d66e]"
             >
               Get in touch
             </a>

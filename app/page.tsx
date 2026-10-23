@@ -122,16 +122,13 @@ export default function Home() {
       <ScrollTop />
       {/* Nav */}
       <nav className="sticky top-0 z-10 border-b border-white/[0.07] bg-[#0e0e0c]/85 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
-          <a href="#top" className="font-serif text-xl">
-            Stuart Browning
-          </a>
+        <div className="flex items-center justify-end px-6 py-4 md:px-10">
           <div className="flex items-center gap-7 text-sm text-[#a9a499]">
             <a href="#about" className="hidden hover:text-white sm:inline">About</a>
             <a href="#experience" className="hover:text-white">Experience</a>
             <a
               href="#contact"
-              className="rounded-full bg-[#ece8df] px-4 py-1.5 font-medium text-black hover:bg-white"
+              className="bg-[#d9b56b] px-6 py-3 text-base font-medium text-black transition hover:bg-[#e6c785]"
             >
               Get in touch
             </a>

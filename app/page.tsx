@@ -84,9 +84,10 @@ const data = {
       school: "Tulane University",
       detail: "A.B. Freeman School of Business · B.S. Management (Finance & Computer Science)",
       period: "Expected Dec 2027",
+      location: "New Orleans, Louisiana",
     },
-    { school: "John Cabot University", detail: "Study abroad · Rome", period: "" },
-    { school: "Miami Country Day School", detail: "High school diploma · Miami, FL", period: "" },
+    { school: "John Cabot University", detail: "Study abroad", period: "", location: "Rome, Italy" },
+    { school: "Miami Country Day School", detail: "High school diploma", period: "", location: "Miami, Florida" },
   ],
 
   skills: {
@@ -223,7 +224,10 @@ export default function Home() {
         <div className="space-y-10">
           {data.education.map((ed) => (
             <div key={ed.school} className="grid gap-3 md:grid-cols-[220px_1fr] md:gap-10">
-              <p className="text-sm text-[#7d786d]">{ed.period}</p>
+              <div className="text-sm text-[#7d786d]">
+                {ed.period && <p>{ed.period}</p>}
+                <p>{ed.location}</p>
+              </div>
               <div>
                 <h3 className="font-serif text-2xl">{ed.school}</h3>
                 <p className="mt-1 text-[#b3aea3]">{ed.detail}</p>

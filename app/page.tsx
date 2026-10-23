@@ -9,7 +9,7 @@ const data = {
     "Senior at Tulane studying Finance and Computer Science. Co-founder of Atlas Workbench, a spatial workspace where an AI agent works across the tools your team already uses.",
   email: "Stuartbrowning2005@gmail.com",
   phone: "+1 (305) 401-1031",
-  location: "New Orleans, LA · New York, NY",
+  location: "New Orleans, Louisiana · New York, New York",
   linkedin: "https://www.linkedin.com/in/stuart-e-browning",
   github: "https://github.com/stuartbrowning2005",
 
@@ -22,7 +22,7 @@ const data = {
     {
       company: "Atlas Workbench",
       title: "Co-founder",
-      location: "New Orleans, LA",
+      location: "New Orleans, Louisiana",
       url: "https://atlasworkbench.ai",
       period: "Sep 2026 – Present",
       bullets: [
@@ -33,7 +33,7 @@ const data = {
     {
       company: "zerohash",
       title: "Product Management Intern",
-      location: "New York, NY",
+      location: "New York, New York",
       period: "May 2026 – Aug 2026",
       bullets: [
         "Scoped an AI support layer for the Connect dashboard chatbot to expand automated resolution beyond its initial use cases.",
@@ -48,7 +48,7 @@ const data = {
     {
       company: "Republic",
       title: "Product Management Intern",
-      location: "New York, NY",
+      location: "New York, New York",
       period: "Jun 2025 – Aug 2025",
       bullets: [
         "Productized and automated manual operations for crypto payment methods.",
@@ -60,7 +60,7 @@ const data = {
     {
       company: "Republic",
       title: "Intern to the Chief of Staff",
-      location: "New York, NY",
+      location: "New York, New York",
       period: "Jun 2024 – Aug 2024",
       bullets: [
         "Supported the Chief of Staff in the Office of the CEO on high-priority strategic initiatives.",
